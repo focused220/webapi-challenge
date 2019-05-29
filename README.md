@@ -24,15 +24,26 @@ In this challenge, create a web API around the following resources: `Projects` a
 
 Demonstrate your understanding of this Sprint's concepts by answering the following free-form questions. Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager.
 
-- [ ] Mention two parts of Express that you learned about this week.
+- [ x ] Mention two parts of Express that you learned about this week.
 
-- [ ] Describe Middleware?
+        -The parent Express module is used to created the overall server model.
+        -The childe Router() method is used to create individual express routing functionality.
 
-- [ ] Describe a Resource?
+- [ x ] Describe Middleware?
 
-- [ ] What can the API return to help clients know if a request was successful?
+        -Middleware sits between the start of an api's endpoint and final destination of the api's call (other routes, db, etc.). It is used to handle/modulate data coming from the start of an api endpoint for use at the calls final destination.
 
-- [ ] How can we partition our application into sub-applications?
+- [ x ] Describe a Resource?
+
+        -A resource is any and everything behind an api's endpoint. The data, the database and any additional third-party middleware utilities used are all considered resources. 
+
+- [ x ] What can the API return to help clients know if a request was successful?
+
+        -An API can return a status code along with a json representation of the object that was requested/acted upon. 
+
+- [ x ] How can we partition our application into sub-applications?
+
+        -Using a router. This allows for a clear delineation between the base application and any additional branches in functionality from the base. 
 
 ## Project Setup
 
